@@ -12,7 +12,6 @@
     font-family: 'Barlow', 'Open sans';
 }
 
-
 .header, .footer {
     min-height: 60px;
 }
@@ -32,14 +31,41 @@
     text-decoration: underline;
 }
 
-.header__search-input {
-    width: 400px;
+.header__search {
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: 0;
+}
+
+.header__search-input {
+    width: 400px;
+
     height: 40px;
     font-family: inherit;
     font-size: 20px;
     padding: 5px;
+    border: none;
+}
+
+
+.header__search-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(183, 0, 0);
+    border: none;
+    background-image: url('https://www.last.fm/static/images/icons/search_16.bde37072495a.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.header__search-button {
+    cursor: pointer;
+}
+
+.content {
+    min-height: 100vh;
 }
 
 .footer {
@@ -49,12 +75,31 @@
     padding: 30px 50px;
 }
 
+.notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 300px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.notifications__notification {
+    width: 100%;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 /*
-    Index-page rules
+    Explore-page rules
 */
 
-.content {
-    min-height: 100vh;
+.explore-content {
     padding: 45px 20px;
     text-align: center;
 }
@@ -108,7 +153,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://www.16tons.ru/events/galleries-new/632/5cd97cb1435f4.jpg');
     background-size: cover;
     color: white;
     font-weight: bold;
@@ -145,7 +189,7 @@
 }
 
 .artists-list__avatar {
-    background-image: url('http://www.4words.ru/photos/joji/gallery/www.4words.ru_joji_509807.jpg');
+    background-color: rgba(0, 0, 0, 0.6);
     background-size: cover;
     background-position: 50%;
     width: 150px;
@@ -191,7 +235,7 @@
 .track-list__avatar {
     width: 80px;
     height: 80px;
-    background-image: url('https://avatars.yandex.net/get-music-content/34131/e1b13578.a.3577539-1/200x200');
+    background-color: rgba(0, 0, 0, 0.6);
     background-size: cover;
     float: left;
 }
@@ -236,7 +280,6 @@
     width: 175px;
     height: 175px;
     background-color: aliceblue;
-    background-image: url('https://i1.u-mama.ru/869/962/07d/d5d00123efb6343097a92c7bd23e30fc.jpg');
     background-size: cover;
     background-position: 50%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -284,20 +327,20 @@
 .track__avatar {
     height: 40px;
     width: 40px;
-    background-image: url('https://c.disquscdn.com/uploads/users/1172/7228/avatar92.jpg?1483815387');
+    background-color: rgba(0, 0, 0, 0.6);
     background-size: cover;
 }
 
 .track__title {
-    flex: 3;
+    flex: 2;
     font-weight: bold;
     margin-left: 20px;
 }
 
 .track__author {
-    flex: 6;
+    flex: 2;
 }
 
-.track__title:hover, .track__author:hover {
+.track__title:hover {
     text-decoration: underline;
 }
