@@ -1,0 +1,37 @@
+.artists-list {
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.artists-list__artist-card {
+    height: 250px;
+    width: 200px;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.artists-list__artist-card:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.artists-list__avatar {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.artists-list__artist-name {
+    font-size: 14px;
+    width: 100%;
+    max-height: 50px;
+    font-weight: bold;
+}

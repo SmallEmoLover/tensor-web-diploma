@@ -1,0 +1,33 @@
+.card {
+    width: 175px;
+    height: 175px;
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.card__description {
+    font-size: 12px;
+}
+
+.card__title:hover, .card__description:hover {
+    text-decoration: underline;
+}

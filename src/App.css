@@ -1,0 +1,66 @@
+.app {
+    font-family: 'Barlow', 'Open sans';
+}
+
+.header, .footer {
+    min-height: 60px;
+}
+
+.header {
+    padding: 0px 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+    color: rgb(183, 0, 0);
+    text-decoration: underline;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.header__search-input {
+    width: 400px;
+
+    height: 40px;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+}
+
+
+.header__search-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(183, 0, 0);
+    border: none;
+    background-image: url('https://www.last.fm/static/images/icons/search_16.bde37072495a.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.header__search-button {
+    cursor: pointer;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.footer {
+    background-color: black;
+    color: #666666;
+    font-size: 12px;
+    padding: 30px 50px;
+}

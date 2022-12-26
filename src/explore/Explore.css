@@ -1,0 +1,24 @@
+.explore-content {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.content__header {
+    font-size: 45px;
+}
+
+.section, .search-section {
+    margin-top: 40px;
+}
+
+.section__header {
+    font-size: 18px;
+}
+
+.section__divider {
+    border: none;
+    width: 70px;
+    height: 2px;
+    margin: 20px auto;
+    background-color: rgb(183, 0, 0);
+}

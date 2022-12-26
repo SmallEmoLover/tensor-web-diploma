@@ -1,7 +1,7 @@
 /**
  * Интерфейс артиста
  */
-export interface IArtist {
+ export interface IArtist {
     /**
      * Псевдоним
      */
