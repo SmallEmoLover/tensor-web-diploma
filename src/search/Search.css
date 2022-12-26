@@ -1,0 +1,29 @@
+.search-content {
+    min-height: 100vh;
+    padding: 50px 100px;
+}
+
+.search-content__header {
+    font-size: 30px;
+}
+
+.serach-section__header {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.search-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-content__back-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.search-content__back-link:hover {
+    text-decoration: underline;
+}
